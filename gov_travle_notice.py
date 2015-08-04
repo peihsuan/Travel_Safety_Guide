@@ -1,3 +1,7 @@
+# -*- coding: UTF-8 -*-
+import sys 
+reload(sys) 
+sys.setdefaultencoding('utf-8')
 import json
 import requests
 import re
@@ -19,9 +23,17 @@ for c in collection_country_event:
 	if c.find('strong') :				#make sure the notice isn't missing
 		if not "-" in c.find('a').text:	#filter borders' notice
 			country_name = " ".join(re.findall("[a-zA-Z]+",c.find('a').text))
-			notice = c.find('strong').text[:2]
-			print country_name, notice
-			data[country_name]= notice
+			notice = c.find('strong').text[:1]
+			if "灰" in notice:
+				notice_num =0
+			elif "黃" in notice:
+				notice_num =1
+			elif "橙" in notice:
+				notice_num =2
+			elif "紅" in notice:
+				notice_num =3
+			print country_name, notice_num
+			data[country_name]= notice_num
 
 
 with open('boca_gov_notice.json', 'w') as outfile:
