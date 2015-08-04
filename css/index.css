@@ -1,0 +1,12 @@
+body{
+    background-color:#4d9add;
+}
+#container{
+    margin-left: 10%;
+}
+#head{
+    font-size:45px;
+    color: white;
+    margin-left:3%; 
+    margin-top: 3%;
+}
