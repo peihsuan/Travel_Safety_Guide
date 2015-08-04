@@ -1,5 +1,5 @@
-$.getJSON('../country_abbr.json', function(country_abbr) {
-    $.getJSON('../boca_gov_notice.json', function(gov_notice) {
+$.getJSON('country_abbr.json', function(country_abbr) {
+    $.getJSON('boca_gov_notice.json', function(gov_notice) {
         var alert_data = {};
         $.each(gov_notice, function(country, alert_color) {
             if (alert_color === 0 && country_abbr[country]) {
