@@ -27,11 +27,11 @@ $.getJSON('country_abbr.json', function(country_abbr) {
         var map = new Datamap({
             element: document.getElementById('container'),
             fills: {
-                Gray_alert: 'Gray',
-                Yellow_alert: 'Yellow',
-                Orange_alert: 'Orange',
-                Red_alert: 'Red',
-                defaultFill: 'LightGreen'
+                Gray_alert: '#b2b2b2',
+                Yellow_alert: '#ffff99',
+                Orange_alert: '#ffd700',
+                Red_alert: '#ff6060',
+                defaultFill: '#ccffcc'
             },
             data: alert_data,
         });

@@ -15,10 +15,10 @@ for row in rows:
     cols = row.find_all('td')
     cols = [ele.text.strip() for ele in cols]
 
-    if len(cols) <= 2:
+    if len(cols) <= 2:		#avoid haed
         continue
 
-    data[cols[0]] = cols[2]
+    data[cols[0]] = cols[2] 
     # data.append([ele for ele in cols if ele]) # Get rid of empty values
 
 with open('country_abbr.json', 'w') as outfile:
