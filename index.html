@@ -12,7 +12,31 @@
             世界旅遊警示圖
         </div>
         <div id="container" style="position: relative; width: 1000px; height: 600px;">
+            <svg class="ps" width="330" height="180">
+              <rect width="330" height="180" />
+            </svg>
+            <svg class="green note icon"width="20" height="15">
+                <rect width="15" height="15" style="fill:#ccffcc;"/> 
+            </svg>
+            <div class="green note text">綠色-正常狀態</div>
+            <svg class='grey note icon'width="20" height="15">
+                <rect width="15" height="15" style="fill:#b2b2b2;"/> 
+            </svg>
+            <div class="grey note text">灰色-提醒注意</div>
+            <svg class='yellow note icon' width="20" height="15">
+                <rect width="15" height="15" style="fill:#ffff99;"/> 
+            </svg>
+            <div class="yellow note text" >黃色-特別注意旅遊安全並檢討應否前往</div>
+            <svg class='orange note icon'width="20" height="15">
+                <rect width="15" height="15" style="fill:#ffd700;"/> 
+            </svg>
+            <div class='orange note text' >橙色-高度小心,避免非必要旅行</div>
+            <svg class='red note icon'width="20" height="15">
+                <rect width="15" height="15" style="fill:#ff6060;"/> 
+            </svg>
+            <div class="red note text">紅色-不宜前往</div>
         </div>
+        
         <script src="//code.jquery.com/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js" type="text/javascript" charset="utf-8"></script>

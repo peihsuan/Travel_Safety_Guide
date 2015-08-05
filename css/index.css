@@ -2,11 +2,46 @@ body{
     background-color:#4d9add;
 }
 #container{
-    margin-left: 8%;
+    margin-left: 12%;
 }
 #head{
     font-size:45px;
     color: white;
     margin-left:3%; 
     margin-top: 3%;
+}
+.ps{
+	border-radius: 25px;
+	fill:white;
+	fill-opacity:0.5;
+	position: fixed;
+  top: 66%;
+  left: 4%;
+  z-index:10;
+}
+.note{
+	position: fixed;
+	z-index: 30;
+  
+}
+.icon{
+  left: 6%;
+}
+.text{
+  left: 8%;
+}
+.green{
+  	top: 70%;
+}
+.grey{
+  	top: 74%;
+}
+.yellow{
+  	top: 78%;
+}
+.orange{
+  	top: 82%;
+ }
+.red{
+  	top: 86%;
 }
